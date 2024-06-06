@@ -1,12 +1,12 @@
-// Bubble Sort Algorithm
+// Bubble Sort Algorithm without taking User Input
 
 function bubbleSort(arr) {
-    var n = arr.length;
-    for (var i = 0; i < n; i++) {
-        for (var j = 0; j < n - i - 1; j++) {
+    let n = arr.length;
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                 // Swap arr[j] and arr[j + 1]
-                var temp = arr[j];
+                let temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
             }
@@ -14,6 +14,6 @@ function bubbleSort(arr) {
     }
 }
 
-var arrayToSort = [65, 35, 25, 13, 23, 11, 91];
+const arrayToSort = [65, 35, 25, 13, 23, 11, 91];
 bubbleSort(arrayToSort);
 console.log("Sorted array:", arrayToSort);
