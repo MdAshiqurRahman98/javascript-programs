@@ -7,7 +7,7 @@ function shuffle(nums, n) {
 
     let ans = new Array(2 * n);
     
-    for (let i = 0; i < nums.length; i++) {
+    for (let i = 0; i < n; i++) {
         ans[i * 2] = nums[i];
         ans[(i * 2) + 1] = nums[i + n];
     }
